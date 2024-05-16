@@ -33,6 +33,8 @@ import { EventType } from 'types/eventType';
 const TICKS_PER_MINUTE = 600000000;
 const TICKS_PER_SECOND = 10000000;
 
+export const SHOW_OSD_EVENT = 'showVideoOsd';
+
 function getOpenedDialog() {
     return document.querySelector('.dialogContainer .dialog.opened');
 }
