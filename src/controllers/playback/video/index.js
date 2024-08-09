@@ -1389,8 +1389,7 @@ export default function (view) {
         // Create bubble elements if they don't already exist
         if (chapterThumbContainer) {
             chapterThumb = chapterThumbContainer.querySelector('.chapterThumbWrapper');
-            chapterThumbText = chapterThumbContainer.querySelector('h2.chapterThumbText');
-            chapterThumbName = chapterThumbContainer.querySelector('div.chapterThumbText');
+            chapterThumbText = chapterThumbContainer.querySelector('.chapterThumbText');
         } else {
             doFullUpdate = true;
 

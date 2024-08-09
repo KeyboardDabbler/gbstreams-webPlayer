@@ -16,7 +16,7 @@ interface SearchFieldsProps {
 const SearchFields: FC<SearchFieldsProps> = ({
     onSearch = () => { /* no-op */ },
     query
-}) => {
+}: SearchFieldsProps) => {
     const inputRef = useRef<HTMLInputElement>(null);
 
     const onAlphaPicked = useCallback((e: Event) => {

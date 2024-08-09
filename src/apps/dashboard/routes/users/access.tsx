@@ -1,5 +1,5 @@
-import type { BaseItemDto, DeviceInfo, UserDto } from '@jellyfin/sdk/lib/generated-client';
-import React, { useCallback, useEffect, useState, useRef } from 'react';
+import type { UserDto } from '@jellyfin/sdk/lib/generated-client';
+import React, { FunctionComponent, useCallback, useEffect, useState, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 import loading from '../../../../components/loading/loading';
@@ -20,7 +20,7 @@ type ItemsArr = {
     checkedAttribute?: string
 };
 
-const UserLibraryAccess = () => {
+const UserLibraryAccess: FunctionComponent = () => {
     const [ searchParams ] = useSearchParams();
     const userId = searchParams.get('userId');
     const [ userName, setUserName ] = useState('');

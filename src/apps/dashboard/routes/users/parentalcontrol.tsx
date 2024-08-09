@@ -2,7 +2,7 @@ import type { AccessSchedule, ParentalRating, UserDto } from '@jellyfin/sdk/lib/
 import { UnratedItem } from '@jellyfin/sdk/lib/generated-client/models/unrated-item';
 import { DynamicDayOfWeek } from '@jellyfin/sdk/lib/generated-client/models/dynamic-day-of-week';
 import escapeHTML from 'escape-html';
-import React, { useCallback, useEffect, useState, useRef } from 'react';
+import React, { FunctionComponent, useCallback, useEffect, useState, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 import globalize from '../../../../scripts/globalize';
@@ -60,7 +60,7 @@ function handleSaveUser(
     };
 }
 
-const UserParentalControl = () => {
+const UserParentalControl: FunctionComponent = () => {
     const [ searchParams ] = useSearchParams();
     const userId = searchParams.get('userId');
     const [ userName, setUserName ] = useState('');

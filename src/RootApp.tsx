@@ -6,17 +6,19 @@ import { ApiProvider } from 'hooks/useApi';
 import { WebConfigProvider } from 'hooks/useWebConfig';
 import { queryClient } from 'utils/query/queryClient';
 
-import RootAppRouter from 'RootAppRouter';
+import RootAppRouter from './RootAppRouter';
 
-const RootApp = () => (
-    <QueryClientProvider client={queryClient}>
-        <ApiProvider>
-            <WebConfigProvider>
-                <RootAppRouter />
-            </WebConfigProvider>
-        </ApiProvider>
-        <ReactQueryDevtools initialIsOpen={false} />
-    </QueryClientProvider>
-);
+const RootApp = () => {
+    return (
+        <QueryClientProvider client={queryClient}>
+            <ApiProvider>
+                <WebConfigProvider>
+                    <RootAppRouter />
+                </WebConfigProvider>
+            </ApiProvider>
+            <ReactQueryDevtools initialIsOpen={false} />
+        </QueryClientProvider>
+    );
+};
 
 export default RootApp;

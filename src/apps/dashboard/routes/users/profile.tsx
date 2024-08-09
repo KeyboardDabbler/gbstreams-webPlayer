@@ -1,6 +1,6 @@
-import type { BaseItemDto, NameIdPair, SyncPlayUserAccessType, UserDto } from '@jellyfin/sdk/lib/generated-client';
+import type { SyncPlayUserAccessType, UserDto } from '@jellyfin/sdk/lib/generated-client';
 import escapeHTML from 'escape-html';
-import React, { useCallback, useEffect, useState, useRef } from 'react';
+import React, { FunctionComponent, useCallback, useEffect, useState, useRef } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 import Dashboard from '../../../../utils/dashboard';
@@ -35,7 +35,7 @@ function onSaveComplete() {
     toast(globalize.translate('SettingsSaved'));
 }
 
-const UserEdit = () => {
+const UserEdit: FunctionComponent = () => {
     const [ searchParams ] = useSearchParams();
     const userId = searchParams.get('userId');
     const [ userName, setUserName ] = useState('');
