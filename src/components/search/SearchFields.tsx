@@ -1,7 +1,7 @@
 import React, { type ChangeEvent, type FC, useCallback, useRef } from 'react';
 import AlphaPicker from '../alphaPicker/AlphaPickerComponent';
 import Input from 'elements/emby-input/Input';
-import globalize from '../../scripts/globalize';
+import globalize from '../../lib/globalize';
 import layoutManager from '../layoutManager';
 import browser from '../../scripts/browser';
 import 'material-design-icons-iconfont';
@@ -16,7 +16,7 @@ interface SearchFieldsProps {
 const SearchFields: FC<SearchFieldsProps> = ({
     onSearch = () => { /* no-op */ },
     query
-}: SearchFieldsProps) => {
+}) => {
     const inputRef = useRef<HTMLInputElement>(null);
 
     const onAlphaPicked = useCallback((e: Event) => {

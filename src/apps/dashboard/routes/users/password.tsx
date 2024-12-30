@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 
 import SectionTabs from '../../../../components/dashboard/users/SectionTabs';
@@ -7,7 +7,7 @@ import SectionTitleContainer from '../../../../elements/SectionTitleContainer';
 import Page from '../../../../components/Page';
 import loading from '../../../../components/loading/loading';
 
-const UserPassword: FunctionComponent = () => {
+const UserPassword = () => {
     const [ searchParams ] = useSearchParams();
     const userId = searchParams.get('userId');
     const [ userName, setUserName ] = useState('');
