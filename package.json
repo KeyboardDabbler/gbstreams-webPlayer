@@ -1,8 +1,8 @@
 {
-  "name": "jellyfin-web",
+  "name": "gbstreams-webplayer",
   "version": "10.10.3",
-  "description": "Web interface for Jellyfin",
-  "repository": "https://github.com/jellyfin/jellyfin-web",
+  "description": "Web interface for GBstreams",
+  "repository": "https://github.com/KeyboardDabbler/gbs-webPlayer",
   "license": "GPL-2.0-or-later",
   "devDependencies": {
     "@babel/core": "7.25.8",
