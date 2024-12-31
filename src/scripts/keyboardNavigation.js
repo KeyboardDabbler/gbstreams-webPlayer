@@ -51,11 +51,6 @@ const NavigationKeys = ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Brow
 const MediaKeys = ['MediaRewind', 'MediaStop', 'MediaPlay', 'MediaFastForward', 'MediaTrackPrevious', 'MediaTrackNext', 'MediaPlayPause'];
 
 /**
- * Keys used for media playback control.
- */
-const MediaKeys = ['MediaRewind', 'MediaStop', 'MediaPlay', 'MediaFastForward', 'MediaTrackPrevious', 'MediaTrackNext', 'MediaPlayPause'];
-
-/**
  * Elements for which navigation should be constrained.
  */
 const InteractiveElements = ['INPUT', 'TEXTAREA'];
