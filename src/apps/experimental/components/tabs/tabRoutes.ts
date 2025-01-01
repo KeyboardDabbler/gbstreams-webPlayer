@@ -104,6 +104,11 @@ const TabRoutes: TabRoute[] = [
                 index: 5,
                 label: 'Genres',
                 value: LibraryTab.Genres
+            },
+            {
+                index: 6,
+                label: 'TabStudios',
+                value: LibraryTab.Networks
             }
         ]
     },
